@@ -1,5 +1,7 @@
 # Image-Processing-using-Wavelets
 
+The summaries for the Haar and Lifting Scheme wavelet transforms are given below. Note that the Haar method was implemented by taking windows of 8 * 8 across the image and then applying the Haar transform on them and then combining these blocks to obtain the final image. These methods are implemented for greyscale as well as colored images
+
 ## Haar Wavelets Denoising
 
 Implemented the Haar wavelet transform for images, which recursively decomposes an image into approximation and detail coefficients. The output is in the form of a single 2D array containing the coefficients at all scales. Also it is necessary to ensure that the transform is orthogonal, i.e. the sum of squared values is the same before and after the transform; this requires scaling the coefficients by  √2 at each step. Also implemented the inverse Haar transform, which reconstructs the original image from the wavelet coefficients
